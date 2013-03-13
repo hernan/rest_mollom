@@ -28,7 +28,7 @@ class RMollom
   end
   
   def create_captcha(content={})
-    content = {type: 'image'}.merge!(content)
+    content = {:type => 'image'}.merge!(content)
     @api.captcha(:create, content)
   end
   
